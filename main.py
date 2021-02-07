@@ -160,8 +160,7 @@ while True:
         features[f] = int(feature_) if (f == 'price' or f == 'quantity') else feature_
         analytics[f].append(features[f])
     goods.append((num, features))
-
-goods = int(input("Введите количество товара "))
+goods = int(input("Введи количество товара "))
 n = 1
 my_dict = []
 my_list = []
@@ -176,4 +175,5 @@ while n <= goods:
          'ед': my_dict.get('ед')})
 print(my_list)
 print(my_analys)
+
 
